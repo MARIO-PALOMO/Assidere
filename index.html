@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #58595b;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-decoration: none;
+      font-size: 19px;
+    }
+
+    .topnav a:hover {
+      font-weight: bold;
+    }
+
+    .topnav a.active {
+      font-weight: bold;
+      color: white;
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+    .logo {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+
+    .frase {
+      font-size: 36px;
+      color: #58595b;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 170px;
+      padding-right: 170px;
+      padding-left: 170px;
+    }
+
+    .pie {
+      background: #58595b;
+      color: #fff;
+      text-align: center;
+      padding: 35px;
+      font-size: 18.23px;
+    }
+
+    .pie-img {
+      width: 90px;
+    }
+
+    @media screen and (max-width: 600px) {
+
+      .logo {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+
+      .frase {
+        font-size: 16px;
+        color: #58595b;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .pie {
+        padding: 20px;
+        font-size: 16px;
+      }
+
+      .pie-img {
+        width: 40px;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      .topnav {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 8px;
+      }
+
+      .topnav a {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 16px;
+      }
+
+      .topnav a:not(:first-child) {
+        display: none;
+      }
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      .topnav.responsive {
+        position: relative;
+      }
+
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+  </style>
+
+</head>
+
+<body style="margin: 0px !important;">
+
+  <div class="container">
+
+    <div class="topnav" id="myTopnav">
+      <a class="active" href="#" id="linicio" onclick="pagina(1)">Inicio</a>
+      <a href="#" id="lservicios" onclick="pagina(2)">Nuestros Servicios</a>
+      <a href="#" id="lassidere" onclick="pagina(3)">Qué es ASSIDERE</a>
+      <a href="#" id="lsomos">Quienes somos</a>
+      <a href="#" id="larticulos">Artículos</a>
+      <a href="#" id="lcontactos">Contactos</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="text-align: right !important;">
+        <img src="img/menu.png" alt="|||" width="30">
+      </a>
+    </div>
+
+    <div id="inicio">
+      <header>
+        <div class="logo">
+          <img src="img/logo.png" alt="" style="width: 100%;">
+        </div>
+        <div>
+          <img src="img/img1.png" alt="" style="width: 100%;">
+        </div>
+      </header>
+
+      <div class="frase">
+        <i>
+          "Un mundo mejor es posible si nos respetamos
+          unos a otros, sin importar género, cumpliendo los
+          acuerdos sociales."
+        </i>
+      </div>
+    </div>
+
+    <div id="servicios">
+
+      <div style="font-size: 26px; color: #58595b; padding-top: 50px; padding-left: 100px;">
+        <b>NUESTROS SERVICIOS</b>
+      </div>
+      <div style="padding-right: 80px;">
+        <div
+          style="background: #ef5045; color: #fff; width: 100%; height: 140px; font-size: 22px; padding-left: 100px; padding-top: 33px;">
+          Nuestros servicios los enfocamos de acuerdo con la necesidad del cliente, plena capacidad para manejar
+          documentación y procesos en general para clientes extranjeros.
+        </div>
+
+        <div class="row">
+          <div class="col-md-2">
+            <div style="background: #ef5045; color: #58595b; padding-left: 9px;">
+              <div style="padding-top: 1190px;">
+                &nbsp;
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5" style="color: #58595b;">
+            <br><br><br>
+            <div style="padding-left: 65px !important;">
+              <div style="font-size: 22px;"><b style="color: #ef5045 !important;">1.</b> <b>LITIGIO CIVIL</b></div>
+              <div style="text-align: justify;">
+                Capacitados para responder a las necesidades
+                del cliente tanto particular como empresarial de
+                manera ágil, con rigor jurídico, sentido de
+                responsabilidad y equidad en el tratamiento de
+                cada caso.
+              </div>
+            </div>
+            <br><br>
+            <div style="padding-left: 65px !important;">
+              <div style="font-size: 22px;"><b style="color: #ef5045 !important;">2.</b> <b>LITIGIO PENAL</b></div>
+              <div style="text-align: justify;">
+                <br>
+                <b style="color: #ef5045 !important;">PATROCINIO:</b><br>
+                Nuestra experiencia nos permite solventar su
+                dudas ante el litigio penal, ayudándolo a entender sus derechos y opciones, buscando la
+                correcta estrategia de litigio y/o presentación
+                de su defensa.
+
+                <br><br>
+                <b style="color: #ef5045 !important;">CASACIÓN:</b><br>
+                El recurso extraordinario de casación penal es
+                la diferencia entre la justicia y la injusticia. Contamos con una alta formación académica y
+                prolongada experiencia que asegura la fundamentación técnica que exige este recurso extraordinario tanto
+                en su redacción como discusión en audiencia para la obtención de una
+                sentencia de fondo satisfactoria a los derechos
+                de los justiciados.
+
+                <br><br>
+                <b style="color: #ef5045 !important;">VIOLENCIA INTRAFAMILIAR:</b><br>
+                Entendemos y enfrentamos a la violencia
+                familiar como un problema social que afecta a
+                los miembros del núcleo familiar, sin importar
+                género ni edad, nos comprometemos con la defensa de las víctimas de manera responsable,
+                respetuosa y solidaria.
+
+
+                <br><br>
+                <b style="color: #ef5045 !important;">CONTROL DE MERCADO:</b><br>
+                Proporcionamos las herramientas necesarias
+                para blindar aquellos aspectos legales que pudieran desfavorecer a las organizaciones, especialmente
+                aquellos con los cuales se disminuye su participación en el mercado a través
+                de actividades de dudosa honestidad, como
+                son la falsificación de producto y/ o marca, el
+                contrabando y/o el monopolio de mercado.
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-5" style="color: #58595b;">
+            <br><br><br>
+            <div style="padding-left: 65px !important;">
+              <div style="font-size: 22px;"><b style="color: #ef5045 !important;">3.</b> <b>ASESORIA EMPRESARIAL</b>
+              </div>
+              <div style="text-align: justify;">
+                Brindamos asesoría a empresas y nuevos emprendimientos, en derecho societario, tributario, laboral, y
+                regulatorio con el fin de proporcionar soluciones enfocadas en aumentar la productividad y
+                competitividad de las empresas
+                aprovechando al máximo los recursos existentes.
+              </div>
+            </div>
+            <br><br>
+            <div style="padding-left: 65px !important;">
+              <div style="font-size: 22px;"><b style="color: #ef5045 !important;">4.</b> <b>DERECHO DE FAMILIA</b>
+              </div>
+              <div style="text-align: justify;">
+                Brindamos acompañamiento legal en el ejercicio y reivindicación de los derechos de los
+                miembros del núcleo familiar en acciones judiciales como: fijación de pensión alimenticia,
+                fijación de régimen de visitas, disolución de sociedad conyugal, inventario, partición de sociedad
+                conyugal y divorcio.
+              </div>
+            </div>
+            <br><br>
+            <div style="padding-left: 65px !important;">
+              <div style="font-size: 22px;"><b style="color: #ef5045 !important;">5.</b> <b>COMPLIANCE PENAL</b>
+              </div>
+              <div style="text-align: justify;">
+                Desarrollamos programas eficaces, ajustados
+                a la realidad de cada empresa, que le proveen
+                herramientas preventivas para evitar infracciones penales que le pudieran generar
+                responsabilidad.
+              </div>
+            </div>
+            <br><br>
+            <div style="padding-left: 65px !important;">
+              <div style="font-size: 22px;"><b style="color: #ef5045 !important;">6.</b> <b>PROPIEDAD INTELECTUAL</b>
+              </div>
+              <div style="text-align: justify;">
+                Asesoramos para el registro de derechos de
+                propiedad intelectual y principalmente articulamos estrategias legales para el combate de la
+                piratería en medios digitales.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div style="padding-top: 200px;"></div>
+    </div>
+
+    <div id="assidere">
+      Qué es ASSIDERE
+    </div>
+
+    <footer>
+      <div style="text-align: center;">
+        <img src="img/lineas.png" alt="|||" class="pie-img">
+      </div>
+      <div class="pie">
+        info@assidere.ec
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+    mostrarPagina("inicio");
+    ocultarPagina("servicios");
+    ocultarPagina("assidere");
+
+    function pagina(id) {
+      if (id == 1) {
+        mostrarPagina("inicio");
+        ocultarPagina("servicios");
+        ocultarPagina("assidere");
+      } else if (id == 2) {
+        ocultarPagina("inicio");
+        mostrarPagina("servicios");
+        ocultarPagina("assidere");
+      } else if (id == 3) {
+        ocultarPagina("inicio");
+        ocultarPagina("servicios");
+        mostrarPagina("assidere");
+      }
+    }
+
+    function mostrarPagina(id) {
+      $("#" + id + "").css({ "display": "block" });
+    }
+
+    function ocultarPagina(id) {
+      $("#" + id + "").css({ "display": "none" });
+    }
+
+  </script>
+</body>
+
+</html>
